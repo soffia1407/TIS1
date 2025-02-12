@@ -16,7 +16,7 @@ describe('Взаимодействие в рабочем пространств�
             cy.log('Переход в раздел "Отклики"');
             cy.get(':nth-child(5) > .menu-item__item-name').click();
             cy.log('Переход в рабочее пространство');
-            cy.get('button:contains("Рабочее пространство")').eq(1).click();
+            cy.get('button:contains("Рабочее пространство")').eq(2).click();
         });
     });
 
@@ -35,6 +35,5 @@ describe('Взаимодействие в рабочем пространств�
 
     afterEach(() => {
         cy.log('Отправка сообщения');
-        cy.get('.comment-textarea__buttons > :nth-child(2)').click();
     });
 });
