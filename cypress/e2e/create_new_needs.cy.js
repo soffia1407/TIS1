@@ -35,7 +35,7 @@ describe('Создание новой вакансии', () => {
 
     it('Создание вакансии с некорректными данными', function () {
         cy.log('Очистка полей и ввод некорректных данных');
-        cy.fixture('createNeeds').then((data) => {
+        cy.fixture('createNewNeeds').then((data) => {
             cy.get('.desktop-modal__content > .vacancy-need-wrapper > .form > :nth-child(1) > .form__labels > .labels > :nth-child(1) > .form-control--responsive > .form-input--text')
                 .clear();
             cy.get('.desktop-modal__content > .vacancy-need-wrapper > .form > :nth-child(1) > .form__labels > .labels > :nth-child(3) > .form-control > .form-area')
