@@ -1,0 +1,10 @@
+{
+    "main_url": "https://dev.profteam.su",
+    "employer_login": "testEmployer",
+    "password": "qwe123",
+    "title": "джуниор(маленький разработчик!)",
+    "duties": "нужно сидеть и делать умный вид.",
+    "requirements": "рахбираться в HTML, CSS, JS и ОБЯЗАТЕЛЬНО В С++ )).",
+    "duties_negative": "недопустимые символы!",
+    "requirements_negative": "не валидные данные."
+  }
