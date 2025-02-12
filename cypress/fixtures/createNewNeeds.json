@@ -5,6 +5,6 @@
     "title": "джуниор(маленький разработчик!)",
     "duties": "нужно сидеть и делать умный вид.",
     "requirements": "рахбираться в HTML, CSS, JS и ОБЯЗАТЕЛЬНО В С++ )).",
-    "duties_negative": "недопустимые символы!",
-    "requirements_negative": "не валидные данные."
+    "duties_negative": "!@#$%^&*",
+    "requirements_negative": "12345"
   }

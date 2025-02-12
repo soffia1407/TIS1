@@ -23,7 +23,7 @@ describe('Создание новой вакансии', () => {
 
     it('Успешное создание вакансии', function () {
         cy.log('Заполнение формы создания вакансии корректными данными');
-        cy.fixture('createNewVacancy').then((data) => { 
+        cy.fixture('createNewNeeds').then((data) => { 
             cy.get('.desktop-modal__content > .vacancy-need-wrapper > .form > :nth-child(1) > .form__labels > .labels > :nth-child(1) > .form-control--responsive > .form-input--text')
                 .type(data.title);
             cy.get('.desktop-modal__content > .vacancy-need-wrapper > .form > :nth-child(1) > .form__labels > .labels > :nth-child(3) > .form-control > .form-area')
@@ -35,7 +35,7 @@ describe('Создание новой вакансии', () => {
 
     it('Создание вакансии с некорректными данными', function () {
         cy.log('Очистка полей и ввод некорректных данных');
-        cy.fixture('createNewVacancy').then((data) => {
+        cy.fixture('createNeeds').then((data) => {
             cy.get('.desktop-modal__content > .vacancy-need-wrapper > .form > :nth-child(1) > .form__labels > .labels > :nth-child(1) > .form-control--responsive > .form-input--text')
                 .clear();
             cy.get('.desktop-modal__content > .vacancy-need-wrapper > .form > :nth-child(1) > .form__labels > .labels > :nth-child(3) > .form-control > .form-area')
@@ -47,6 +47,6 @@ describe('Создание новой вакансии', () => {
 
     afterEach(() => {
         cy.log('Подтверждение создания');
-        cy.get('.desktop-modal__content > .vacancy-need-wrapper > .form > .form__buttons > .button').click(); // Кликаем кнопку "Создать"
+        cy.get('.desktop-modal__content > .vacancy-need-wrapper > .form > .form__buttons > .button').click();
     });
 });
