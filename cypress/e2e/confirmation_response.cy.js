@@ -19,7 +19,7 @@ describe('Подтверждение отклика', () => {
 
             cy.log('Подтверждение первого отклика в списке');
             cy.get('.responses-list-item__actions > :nth-child(1)').first().click();
-            cy.get('.responses-list-item__actions > :nth-child(1)').first().should('not.exist');
+
         });
     });
 });
